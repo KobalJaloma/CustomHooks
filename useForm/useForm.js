@@ -28,9 +28,23 @@ export const useForm = ( initialForm = {}) => {
 }
 
 /*
-    {
-        username: '',
-        email: '',
-        password: '',
-    } 
-    */
+
+FORM EXAMPLE
+
+<input
+    type="text"
+    className='form-control'
+    placeholder='Username'
+    name='username'
+    value={username}
+    onChange= {onInputChange}
+/>
+
+const {formState, onInputChange, onResetForm,  username, email, password} = useForm({
+    username: '',
+    email: '',
+    password: '',
+});
+
+
+*/
